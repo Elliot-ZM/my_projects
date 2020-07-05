@@ -1,0 +1,30 @@
+--mode train
+--model_name diode_dataset_test
+--encoder resnet50_bts
+ 
+--data_root /mnt/520ED4640ED44321/ZMH/datasets/depth_dataset/diode/diode_validation
+ 
+--batch_size 4
+--num_epochs 100
+--learning_rate 1.414e-3
+--weight_decay 1e-2
+--adam_eps 1e-2
+--num_threads 0
+--input_height 416
+--input_width 544
+--max_depth 300
+
+--do_random_rotate
+--degree 2.5
+--log_directory ./models/
+
+--dist_url tcp://127.0.0.1:2345
+
+--log_freq 250
+--do_online_eval
+--eval_freq 10
+--min_depth_eval 1e-3
+--max_depth_eval 300
+--eval_summary_directory ./models/eval
+--eigen_crop
+ 
