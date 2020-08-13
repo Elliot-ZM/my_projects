@@ -1,0 +1,7 @@
+**/__pycache__
+**/.ipynb_checkpoints
+# all models files
+**/model_files
+# test images 
+depth_estimation/test_images/realsense
+depth_estimation/videos/
